@@ -1,3 +1,13 @@
+*
+{
+    font-family: 'Playfair Display', serif;
+}
+
+p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .kader
 {
     position: absolute;
@@ -6,7 +16,7 @@
     border: black 2px solid; 
 }
 
-.img1
+#img1
 {
     width: 10%;
     position: absolute;
@@ -16,12 +26,12 @@
     z-index: 2;
 }
 
-p
+#titel
 {
     position: absolute;
     font-size: 14em;
-    top: 221px;
-    left:108px;
+    top: 201px;
+    left:167px;
     margin: 0px;
     z-index: 3;
     font-family: 'Playfair Display', serif;
@@ -34,16 +44,37 @@ p
     height: 700px; 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
-span{
-    z-index: 1;
-}
 
 .img2
 {
     position: absolute;
     width: 297.99px;
-    top: 17.00px;
+    top: 80.00px;
     left:129.00px;
+}
+
+.text
+{
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deventer
+{
+    position: absolute;
+    top: 328px;
+    left:368px;
+    z-index: 2;
+}
+
+.hogent
+{
+    position: absolute;
+    top: 328px;
+    left:468.00px;
+    z-index: 4;
 }
