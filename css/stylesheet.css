@@ -8,17 +8,23 @@ p
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+li
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .kader
 {
     position: absolute;
     width: 1300px;  
     height: 700px; 
-    border: black 2px solid; 
+    border: black 1.5px solid
+    
 }
 
 #img1
 {
-    width: 10%;
+    
     position: absolute;
     top: 378.00px;
     left:918.00px;
@@ -26,7 +32,7 @@ p
     z-index: 2;
 }
 
-#titel
+#title
 {
     position: absolute;
     font-size: 14em;
@@ -51,24 +57,24 @@ p
 .img2
 {
     position: absolute;
-    width: 297.99px;
-    top: 80.00px;
+    top: 95.00px;
     left:129.00px;
 }
 
 .text
 {
-    width: 1300px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .deventer
 {
     position: absolute;
     top: 328px;
     left:368px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .hogent
@@ -77,4 +83,34 @@ p
     top: 328px;
     left:468.00px;
     z-index: 4;
+}
+
+.list
+{
+    list-style-type: none;
+}
+
+#language
+{
+    position: absolute;
+    left: 40px;
+    top:40px;
+    padding: 10px;
+    border: 1.5px black solid;
+}
+
+.footer
+{
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+.logo
+{
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
