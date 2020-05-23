@@ -1,116 +1,72 @@
-*
+body
 {
-    font-family: 'Playfair Display', serif;
-}
-
-p
-{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-li
-{
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.kader
-{
-    position: absolute;
-    width: 1300px;  
-    height: 700px; 
-    border: black 1.5px solid
+    background-color: #e79fdf;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
     
 }
 
-#img1
+.bg
 {
-    
+    width: 100%;
+    height:100%;
     position: absolute;
-    top: 378.00px;
-    left:918.00px;
-    margin: 0px;
-    z-index: 2;
+    transition: left 4s;
 }
 
-#title
-{
+.software {
+    font-size: 170px;
+    font-family: "Merriweather Sans";
+    color:#000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
     position: absolute;
-    font-size: 14em;
-    top: 201px;
-    left:167px;
-    margin: 0px;
+    left: 31.00px;
+    top: 219.21px;
     z-index: 3;
-    font-family: 'Playfair Display', serif;
-    
-    
-}
-.test
-{
-    width: 1300px;  
-    height: 700px; 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
+    margin: 0px;
+  }
 
-
-.img2
-{
+  .design {
+    font-size: 170px;
+    font-family: "Merriweather Sans";
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
     position: absolute;
-    top: 95.00px;
-    left:129.00px;
-}
-
-.text
-{
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.deventer
-{
-    position: absolute;
-    top: 328px;
-    left:368px;
+    left: 857.109px;
+    top: 371.208px;
     z-index: 4;
-}
+    margin: 0px;
+  }
 
-.hogent
-{
+  .hello {
+    font-size: 36px;
+    font-family: "Merriweather Sans";
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
     position: absolute;
-    top: 328px;
-    left:468.00px;
-    z-index: 4;
-}
+    left: 41.00px;
+    top: 142.72px;
+    z-index: 2;
+  }
 
-.list
-{
-    list-style-type: none;
-}
+  a
+  {
+      color: #000000;
+      text-decoration: none;
+  }
 
-#language
-{
-    position: absolute;
-    left: 40px;
-    top:40px;
-    padding: 10px;
-    border: 1.5px black solid;
-}
-
-.footer
-{
-    width: 800px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-}
-.logo
-{
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
+  a:hover
+  {
+      color: #ffffff;
+      text-decoration: underline;
+  }
+  
+  
+  
