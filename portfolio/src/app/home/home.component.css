@@ -1,0 +1,71 @@
+#bg
+{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    
+}
+
+#title
+{
+   
+    width: 1530px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    
+}
+
+#software {
+    font-size: 170px;
+    font-family: "Merriweather Sans";
+    color:#000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
+    position: absolute;
+    left: 31.00px;
+    top: 219.21px;
+    z-index: 3;
+    margin: 0px;
+  }
+
+  #design {
+    font-size: 170px;
+    font-family: "Merriweather Sans";
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
+    position: absolute;
+    left: 857.109px;
+    top: 371.208px;
+    z-index: 4;
+    margin: 0px;
+  }
+
+  #hello {
+    font-size: 36px;
+    font-family: "Merriweather Sans";
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justifyCenter;
+    position: absolute;
+    left: 41.00px;
+    top: 142.72px;
+    z-index: 2;
+  }
+
+  a
+  {
+      color: #000000;
+      
+  }
+
+  a:hover
+  {
+      color: #ffffff;
+      text-decoration: underline;
+  }
