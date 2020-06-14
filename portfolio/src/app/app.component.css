@@ -1,0 +1,73 @@
+#foto
+{
+    width: 40%;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: url("/assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border-left: 30px transparent solid;
+    border-image-source: url("/assets/besteRand.png");
+    border-image-outset: 0;
+    border-image-slice: 0 0 30% 30%;
+    border-image-repeat: repeat;
+}
+
+#text
+{
+    width: 60%;
+    background-color: white;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100vh;
+    -ms-overflow-style: none;
+}
+#text::-webkit-scrollbar
+{
+    display: none;
+}
+#wrapper
+{
+    display: flex;
+}
+
+#img
+{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    #text
+    {
+        width: 100%;
+        overflow-y: unset;
+    }   
+    #foto
+    {
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 100vw;
+        border-left: 0px;
+        border-bottom: 30px transparent solid;
+        
+    }
+
+    #img
+    {
+        min-height: 50vh;
+        min-width: 100vw;
+    }
+
+    #wrapper
+    {
+        flex-direction: column-reverse;
+    }
+
+    
+}

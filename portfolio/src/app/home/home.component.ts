@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import {transition, trigger, animate, style, state} from "@angular/animations";
+import { ColorService } from '../color.service';
+import { title } from 'process';
 
 let colors: string[] = ["#bfe2f4","#e79fdf","#cee79f","#f2aa6a"];
 
@@ -10,8 +12,8 @@ let colors: string[] = ["#bfe2f4","#e79fdf","#cee79f","#f2aa6a"];
   animations:[
 
     trigger('softwareAnimation', [
-      state('begin', style({width: '100px'})),
-      state('einde', style({width: '200px'})),
+      state('begin', style({left: '100px'})),
+      state('einde', style({left: '200px'})),
       transition('begin => einde',
         [
         animate('1s')
@@ -27,30 +29,27 @@ let colors: string[] = ["#bfe2f4","#e79fdf","#cee79f","#f2aa6a"];
     
 export class HomeComponent implements OnInit {
 
-  public bool: boolean = false;
-  
-  
-  constructor(private elementRef: ElementRef) { }
+  constructor(private _colorService: ColorService) {
+
+    
+
+ 
+   }
 
   ngOnInit(): void {
 
-
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = colors[Math.floor(Math.random() * 4)];
+    this._colorService.setImage('/assets/bg.jpg');
+    for(let x = 0; x <= 3; x++)
+    {
+      let el = document.getElementById(`home${x}`);
+      el.addEventListener('mouseenter', e => 
+      {
+        el.style.color = this._colorService.randomColor();
+      });
+      el.addEventListener('mouseleave', e =>  el.style.color = '#000000');
+    }
 
   }
 
-  public setBool()
-  {
-    if (this.bool)
-    {
-      this.bool = false;
-    }
-    else
-    {
-      this.bool = true;
-    }
-    
-  }
-
-
+  
 }
