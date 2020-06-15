@@ -14,6 +14,25 @@ export class ProjectsComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this._colorService.addEventListener('bikeapp');
+    this._colorService.addEventListener('madonna');
+    this._colorService.addEventListener('merel');
+
+    
+
+
+
+  }
+
+
+  public changeImg(name: string)
+  {
+    this._colorService.setImage(`/assets/${name}.png`);
+  }
+
+  public resetImg()
+  {
+    this._colorService.setImage('/assets/projectsBg.jpg');
   }
 
 }

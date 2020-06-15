@@ -1,29 +1,36 @@
 #foto
 {
-    width: 40%;
+    width: 45%;
     min-height: 100vh;
     max-height: 100vh;
-    background-image: url("/assets/bg.jpg");
+    /*background-image: url("/assets/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-origin: border-box;
-    border-left: 30px transparent solid;
-    border-image-source: url("/assets/besteRand.png");
-    border-image-outset: 0;
-    border-image-slice: 0 0 30% 30%;
-    border-image-repeat: repeat;
+    background-origin: border-box;*/
+    margin-left: -2%;
+    z-index: 4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 #text
 {
     width: 60%;
     background-color: white;
+    background-clip: padding-box;
     min-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
     max-height: 100vh;
     -ms-overflow-style: none;
+    z-index: 5;
+    border-right: 40px transparent dotted;
+    border-image-source: url("/assets/schaduw.png");
+    border-image-outset: 0;
+    border-image-slice: 30% 30% 0 0;
+    border-image-repeat: repeat; 
 }
 #text::-webkit-scrollbar
 {
@@ -32,14 +39,17 @@
 #wrapper
 {
     display: flex;
+    background-color: white;
 }
 
 #img
 {
-    max-width: 100%;
-    object-fit: cover;
+    
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  
 }
-
 @media screen and (max-width: 768px)
 {
 
@@ -47,14 +57,18 @@
     {
         width: 100%;
         overflow-y: unset;
+        border-right: 0px;
+        border-top: 40px transparent solid;
+        min-height: 0;
     }   
     #foto
     {
         min-height: 50vh;
         max-height: 50vh;
         min-width: 100vw;
-        border-left: 0px;
-        border-bottom: 30px transparent solid;
+        margin-left: 0;
+        margin-bottom: -2%;
+       
         
     }
 

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ColorService {
 
-  public foto: any = document.getElementById('foto');
+  public foto: any = document.getElementById('img');
   private _colors = ["ff0000","06ff00","00ffea","fff600","ff00f0"];
 
   constructor() { }
@@ -13,12 +13,27 @@ export class ColorService {
 
   public setImage(url: string)
   {
-     this.foto.style.backgroundImage = `url('${url}')`;
+     this.foto.src = url;
   }
 
 
   public randomColor(): string
   {
     return `#${this._colors[Math.floor(Math.random() * 4)]}`;
+  }
+
+
+  public addEventListener(id: string)
+  {
+    try{
+      let el = document.getElementById(id);
+      el.addEventListener('mouseenter', () => el.style.color = this.randomColor());
+      el.addEventListener('mouseout', () => el.style.color = '#000000');
+    }
+    catch
+    {
+
+    }
+   
   }
 }
