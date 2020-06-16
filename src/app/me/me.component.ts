@@ -11,10 +11,12 @@ export class MeComponent implements OnInit {
   constructor( private _colorService: ColorService) {
 
     _colorService.setImage('/assets/meBg.jpg');
+    
 
    }
 
   ngOnInit(): void {
+    this._colorService.addEventListener('meArrow');
   }
 
 }

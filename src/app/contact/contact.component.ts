@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _colorService: ColorService) { }
 
   ngOnInit(): void {
+    this._colorService.addEventListener('contactArrow');
+    this._colorService.addEventListener('email');
+    this._colorService.addEventListener('github');
+    this._colorService.addEventListener('linkedin');
   }
 
 }

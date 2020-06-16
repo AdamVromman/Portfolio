@@ -8,6 +8,9 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    
 }
 
 #text
@@ -26,6 +29,7 @@
     border-image-outset: 0;
     border-image-slice: 30% 30% 0 0;
     border-image-repeat: repeat; 
+    
 }
 #text::-webkit-scrollbar
 {
@@ -43,6 +47,8 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+ 
+  
   
 }
 @media screen and (max-width: 768px)

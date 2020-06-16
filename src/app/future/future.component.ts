@@ -14,6 +14,7 @@ export class FutureComponent implements OnInit {
   internshipP2:string;
   job:string;
   jobP1:string;
+  future:string;
   
 
   constructor(
@@ -28,7 +29,9 @@ export class FutureComponent implements OnInit {
         this.internshipP2 = t['internshipP2'];
         this.job = t['job'];
         this.jobP1 = t['jobP1'];
+        this.future = t['future'];
       });
+      this._colorService.addEventListener('futureArrow');
     
 
   }
