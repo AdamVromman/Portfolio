@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-future',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FutureComponent implements OnInit {
 
-  constructor() { }
+  internship:string;
+  internshipP1:string;
+  internshipP2:string;
+  job:string;
+  jobP1:string;
+  
+
+  constructor(
+    private _colorService: ColorService
+  ) { }
 
   ngOnInit(): void {
+    this._colorService.taal.subscribe(t => 
+      {
+        this.internship = t['internship'];
+        this.internshipP1 = t['internshipP1'];
+        this.internshipP2 = t['internshipP2'];
+        this.job = t['job'];
+        this.jobP1 = t['jobP1'];
+      });
+    
+
   }
+
+  
 
 }

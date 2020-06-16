@@ -1,0 +1,21 @@
+#languageDiv
+{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    z-index: 8;
+}
+#lang
+{
+    margin: 10px;
+    padding:0;
+}
+
+@media screen and (max-width: 768px)
+{
+    #languageDiv
+    {
+        top:unset;
+        bottom: 0px;
+    }
+}

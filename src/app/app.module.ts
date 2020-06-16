@@ -9,6 +9,7 @@ import { FutureComponent } from './future/future.component';
 import { MeComponent } from './me/me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { LanguageComponent } from './language/language.component';
 
 
 
@@ -20,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
     MeComponent,
     ProjectsComponent,
     ContactComponent,
+    LanguageComponent,
     
   ],
   imports: [

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { trigger, transition, group, query, style, animate, animateChild } from '@angular/animations';
 import { RouterOutlet } from '@angular/router';
-
-
+import { ColorService } from './color.service';
 
 
 @Component({
@@ -28,7 +27,9 @@ import { RouterOutlet } from '@angular/router';
   })
 
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Adam Vromman';
+  
+
  
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animations'];

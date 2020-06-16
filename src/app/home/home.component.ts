@@ -29,25 +29,36 @@ let colors: string[] = ["#bfe2f4","#e79fdf","#cee79f","#f2aa6a"];
     
 export class HomeComponent implements OnInit {
 
+  public adam:string;
+  public future: string;
+  public projects: string;
+  public contact: string;
+
+
   constructor(private _colorService: ColorService) {
 
-    
 
  
    }
 
   ngOnInit(): void {
 
-    this._colorService.setImage('/assets/bg.jpg');
-    for(let x = 0; x <= 3; x++)
-    {
-      let el = document.getElementById(`home${x}`);
-      el.addEventListener('mouseenter', e => 
+    
+    this._colorService.taal.subscribe(t =>
       {
-        el.style.color = this._colorService.randomColor();
-      });
-      el.addEventListener('mouseleave', e =>  el.style.color = '#000000');
-    }
+        this.adam = t['adam'];
+        this.future = t['future'];
+        this.projects = t['projects'];
+        this.contact = t['contact'];
+      }
+    )
+
+    this._colorService.setImage('/assets/bg.jpg');
+    this._colorService.addEventListener("me");
+    this._colorService.addEventListener("future");
+    this._colorService.addEventListener("projects");
+    this._colorService.addEventListener("contact");
+    
 
   }
 

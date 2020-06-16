@@ -3,11 +3,6 @@
     width: 45%;
     min-height: 100vh;
     max-height: 100vh;
-    /*background-image: url("/assets/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;*/
     margin-left: -2%;
     z-index: 4;
     overflow: hidden;
@@ -27,7 +22,7 @@
     -ms-overflow-style: none;
     z-index: 5;
     border-right: 40px transparent dotted;
-    border-image-source: url("/assets/schaduw.png");
+    border-image-source: url("/assets/test2.png");
     border-image-outset: 0;
     border-image-slice: 30% 30% 0 0;
     border-image-repeat: repeat; 
@@ -82,6 +77,5 @@
     {
         flex-direction: column-reverse;
     }
-
     
 }
