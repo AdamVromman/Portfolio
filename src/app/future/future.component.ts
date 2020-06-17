@@ -32,6 +32,7 @@ export class FutureComponent implements OnInit {
         this.future = t['future'];
       });
       this._colorService.addEventListener('futureArrow');
+      this._colorService.setImage('/assets/future.jpg');
     
 
   }

@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
       }
     )
 
-    this._colorService.setImage('/assets/bg.jpg');
+    this._colorService.setImage('/assets/home.jpg');
     this._colorService.addEventListener("me");
     this._colorService.addEventListener("future");
     this._colorService.addEventListener("projects");

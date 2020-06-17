@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private _colorService: ColorService) {
 
-    _colorService.setImage('/assets/projectsBg.jpg');
+    _colorService.setImage('/assets/projects.jpg');
    }
 
   ngOnInit(): void {
@@ -59,7 +59,7 @@ export class ProjectsComponent implements OnInit {
 
   public resetImg()
   {
-    this._colorService.setImage('/assets/projectsBg.jpg');
+    this._colorService.setImage('/assets/projects.jpg');
   }
 
 }

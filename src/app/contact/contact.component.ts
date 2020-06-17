@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
     this._colorService.addEventListener('email');
     this._colorService.addEventListener('github');
     this._colorService.addEventListener('linkedin');
+    this._colorService.setImage('/assets/contact.jpg');
   }
 
 }

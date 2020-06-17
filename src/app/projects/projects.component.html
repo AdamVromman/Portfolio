@@ -2,7 +2,7 @@
     <h1 class="arrow"><a id="projectsArrow" [routerLink]="['/home']">&#8592;</a></h1>
     <h1 class="title" id="projectsTitle">{{projects}}</h1>
     <h2 id="present">{{present}}</h2>
-    <h3 id="madonna">{{madonna}}</h3>
+    <h3 (mouseenter)="changeImg('madonna')" (mouseleave)="resetImg()" id="madonna">{{madonna}}</h3>
     <p>{{madonnaP}}</p>
     <a id="madonnaLink" target="_blank"href="#">[Website]</a>
     <h2 id="past">{{past}}</h2>
