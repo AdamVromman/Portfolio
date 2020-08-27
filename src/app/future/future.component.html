@@ -1,9 +1,11 @@
-<div class="wrapper">
-    <h1 class="arrow"><a id="futureArrow" [routerLink]="['/home']">&#8592;</a></h1>
+<div class="wrapper" id="futureWrapper">
+    <mat-icon id="futureArrow" [routerLink]="['/home']">keyboard_arrow_left</mat-icon>
     <h1 class="title" id="futureTitle">{{future}}</h1>
     <h2>{{internship}}</h2>
     <p>{{internshipP1}}</p>
     <p>{{internshipP2}}</p>
+    <div class="br"></div>
     <h2>{{job}}</h2>
     <p>{{jobP1}}</p>
+    <div class="br"></div>
 </div>

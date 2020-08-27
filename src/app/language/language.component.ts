@@ -18,7 +18,6 @@ export class LanguageComponent implements OnInit {
     this._colorService.taal.subscribe(t =>{
       this.taal = t['lang'];
     });
-    this._colorService.addEventListener('taal');
 
   }
 

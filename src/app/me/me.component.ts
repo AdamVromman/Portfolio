@@ -25,8 +25,6 @@ export class MeComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this._colorService.addEventListener('meArrow');
-    this._colorService.addEventListener('cv');
     this._colorService.taal.subscribe(t => 
       {
         this.meP1 = t['meP1'];

@@ -10,6 +10,7 @@ import { MeComponent } from './me/me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { LanguageComponent } from './language/language.component';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -27,7 +28,8 @@ import { LanguageComponent } from './language/language.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouteModule
+    RouteModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

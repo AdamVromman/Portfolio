@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { ColorService } from '../color.service';
+import { TimelineMax } from 'gsap';
 
 @Component({
   selector: 'app-future',
@@ -22,8 +23,11 @@ export class FutureComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
+    
     this._colorService.taal.subscribe(t => 
       {
+        
         this.internship = t['internship'];
         this.internshipP1 = t['internshipP1'];
         this.internshipP2 = t['internshipP2'];
@@ -31,8 +35,8 @@ export class FutureComponent implements OnInit {
         this.jobP1 = t['jobP1'];
         this.future = t['future'];
       });
-      this._colorService.addEventListener('futureArrow');
       this._colorService.setImage('/assets/future.jpg');
+      
     
 
   }

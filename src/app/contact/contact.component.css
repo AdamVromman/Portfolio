@@ -1,0 +1,13 @@
+h2:hover
+{
+    text-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
+}
+
+
+.links
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}

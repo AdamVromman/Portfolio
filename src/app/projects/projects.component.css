@@ -1,0 +1,15 @@
+a
+{
+    border: 1.2px black solid;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-right: 1%;
+}
+
+a:hover
+{
+    text-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
+    box-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
+}
+
+
