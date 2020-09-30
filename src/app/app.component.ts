@@ -8,9 +8,9 @@ import { slider} from './route-animation';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [
-    slider,
-    ]
+  // animations: [
+  //   slider,
+  //   ]
   })
 
 export class AppComponent {

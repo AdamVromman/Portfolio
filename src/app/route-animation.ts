@@ -74,7 +74,7 @@ export const slider =
         state('onScreenRechts', style({ transform:'translateX(0%)'})),
         state('offScreenRechts', style({transform: 'translateX(100%)'})),
         transition('* <=> *', 
-            animate('600ms')
+            animate('400ms')
         ),
 
         
@@ -85,7 +85,7 @@ export const slider =
         state('onScreenLinks', style({ transform:'translateX(-100%)'})),
         state('offScreenLinks', style({transform: 'translateX(0%)'})),
         transition('* <=> *', 
-            animate('600ms')
+            animate('400ms')
         ),
 
         
