@@ -8,7 +8,8 @@ let nl =
   "projects":"Projecten",
   "adam":"Adam",
   "contact":"Contact",
-  "thanks":"veel dank aan mijn goede vriendin, @MerelMatthys, voor het trekken van de foto's.",
+  "thanks":"foto's door",
+  
 
   "internship":"Stage",
   "job":"Job",
@@ -45,7 +46,8 @@ let en =
   "projects":"Projects",
   "adam":"Adam",
   "contact":"Contact",
-  "thanks":"A big thanks to my good friend, @MerelMatthys, for taking the photo's.",
+  "thanks":"Pictures taken by",
+  
 
   "internship":"Internship",
   "job":"Job",
@@ -58,7 +60,7 @@ let en =
   "madonna":"Madonna",
   "madonnaP":"Since 2018 there is a wonderful, new restaurant to be found close to the city centre of Ghent. The restaurant, owned by three incredible ladies, one of which happens to be my mother, is specialized in ‘forgotten vegetables’, local beers and parties of all sizes. They asked me if it was possible to create a website for them. I said I was thrilled to help. Seeing as I am still studying and I have a familial bond with one of the owners, the project is fairly casual, but I still hope to be able to deliver something fulfils my clients’ wishes and that clearly visualizes the warm and cosy feeling Madonna radiates.",
   "merel":"Merel",
-  "merelP":"Merel Matthys is a filmmaker and photografer. We decided to help each other out. She would help me take pictures for my website and I would help her with her portfolio. This turned out to be one of my favourite projects. To make a website that looks good but puts the focus on the photos and films on it is not somethings that I learn during my courses. It's a learning process for me and for Merel, but that only makes it more interesting. The website is not finished yet, so it's not public, but the github is.",
+  "merelP":"Merel Matthys is a filmmaker and photographer. We decided to help each other out. She would help me take pictures for my website and I would help her with her portfolio. This turned out to be one of my favourite projects. To make a website that looks good but puts the focus on the photos and films on it is not somethings that I learn during my courses. It's a learning process for me and for Merel, but that only makes it more interesting. The website is not finished yet, so it's not public, but the github is.",
   "bikeapp":"BikeApp",
   "bikeappP":"For my Web Applications IV class we had to make an Angular project that uses a RESTful API. As we could freely choose the topic of this website, I chose to make mine about building and fixing bikes. I have made multiple bicycles and it is a topic I like working with, so it was the perfect subject for an interactive and informative website. I managed to use another one of my interests by having non-standard graphical elements which I made myself. This project was really fun and I enjoyed having to figure things out and learn how to use the Angular framework by myself. The website is not public, but the Github repository is.",
   "bikes":"Bikes",
@@ -83,21 +85,14 @@ let en =
 export class ColorService {
 
   public taal: BehaviorSubject<any> = new BehaviorSubject<any>(en);
+  public fotoAanpas: BehaviorSubject<string> = new BehaviorSubject<string>("assets/home3.jpg");
   public foto: any = document.getElementById(`img`) as HTMLImageElement;
   private _colors = ["ff5757","c2ff57","00ffea","00ffa2","ff00f0"];
 
   public setImage(url: string)
   {
-    if(this.foto != null)
-    {
-      document.getElementById('foto').style.opacity = '1';
-      this.foto.src = url;
-      
-    }
-    else
-    {
-      console.log("fuck")
-    }
+    document.getElementById('foto').style.opacity = '1';
+    this.fotoAanpas.next(url);
      
   }
 
@@ -106,21 +101,6 @@ export class ColorService {
   {
     return `#${this._colors[Math.floor(Math.random() * 4)]}`;
   }
-
-
-  // public addEventListener(id: string)
-  // {
-  //   try{
-  //     let el = document.getElementById(id);
-  //     el.addEventListener('mouseenter', () => {let kleur = this.randomColor(); el.style.color = kleur; el.style.borderColor = kleur;});
-  //     el.addEventListener('mouseout', () => {el.style.color = '#000000'; el.style.borderColor = '#000000';});
-  //   }
-  //   catch
-  //   {
-
-  //   }
-   
-  // }
 
   public changeLang()
   {

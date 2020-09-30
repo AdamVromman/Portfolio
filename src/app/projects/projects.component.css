@@ -1,4 +1,4 @@
-a
+.button
 {
     border: 1.2px black solid;
     border-radius: 5px;
@@ -6,10 +6,26 @@ a
     margin-right: 1%;
 }
 
-a:hover
+.button:hover
 {
     text-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
     box-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
+}
+
+.disabled
+{
+    border: 1.2px grey solid;
+    color: grey
+}
+
+.disabled
+{
+    cursor: default;
+}
+
+.disabled:hover{
+    text-shadow: none;
+    box-shadow: none;
 }
 
 

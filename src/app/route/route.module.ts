@@ -8,7 +8,7 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { ContactComponent } from '../contact/contact.component';
 
 let ROUTES: Routes = [
-  {component: HomeComponent, path:'home'},
+  {component: HomeComponent, path:'home', data:{animation: 'home'}},
   {component: ProjectsComponent, path:'projects'},
   {component: FutureComponent, path:'future'},
   {component: ContactComponent, path:'contact'},

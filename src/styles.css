@@ -10,18 +10,26 @@ body
 *
 {
     font-family: "Merriweather Sans", sans-serif;
+    cursor: url(/assets/mouse.png), pointer;
 }
+
 
 a
 {
   color: #000000;
   text-decoration: none;
-      
+  cursor: url(/assets/click.png), pointer;
 }
 
-h1:hover
+.back
+{
+    cursor: url(/assets/click.png), pointer;
+}
+
+h1:hover, h1:focus
 {
     text-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
+    cursor: url(/assets/click.png), pointer;
 }
 
 
@@ -29,6 +37,7 @@ h1:hover
 {
     padding: 10%;
     padding-right: 20%;
+    background-color: white;
 }
 
 .title

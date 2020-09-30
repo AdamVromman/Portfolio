@@ -2,8 +2,17 @@
 {
     position: fixed;
     left: 0px;
-    top:0px;
+    top:15px;
     z-index: 8;
+    width: auto;
+    height: auto;
+}
+
+h3
+{
+    padding:0;
+    box-sizing: border-box;
+    display: inline;
 }
 
 
@@ -14,19 +23,19 @@ a
     padding: 0.7rem;
     margin-right: 10%;
     margin-left: 10%;
+    margin-top: 5vh;
 }
 
-a:hover
+a:hover, a:focus
 {
     text-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
     box-shadow: 1.5px 1.5px #ff5757, -1.5px -1.5px #00ffea;
 }
-
 @media screen and (max-width: 768px)
 {
     #languageDiv
     {
         top:unset;
-        bottom: 0px;
+        bottom: 15px;
     }
 }

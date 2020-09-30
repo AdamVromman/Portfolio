@@ -1,0 +1,52 @@
+#foto
+{
+    width: 200%;
+    height: 100%;
+    z-index: 4;
+    overflow: hidden;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: left;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#img
+{
+    
+  min-width: 50%;
+  min-height: 100%;
+  object-fit: cover;
+  position: relative;
+   left: 0; 
+  top: 0;
+  /* transform: translateX(100%); */
+  
+}
+
+#img2
+{
+    min-width: 50%;
+    min-height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+}
+
+@media screen and (max-width: 768px)
+{
+    #foto
+    {
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 100vw;
+    }
+
+    #img
+    {
+        min-height: 50vh;
+        min-width: 100vw;
+    }
+}

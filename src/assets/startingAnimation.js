@@ -1,3 +1,21 @@
+photo1 = new Image();
+photo2 = new Image();
+photo3 = new Image();
+photo4 = new Image();
+photo5 = new Image();
+photo6 = new Image();
+photo9 = new Image();
+photo10 = new Image();
+photo11 = new Image();
+photo12 = new Image();
 
-
-
+photo1.src = "assets/aottg2Observer.jpg";
+photo2.src = "assets/bikeappObserver.jpg";
+photo3.src = "assets/bikesObserver.jpg";
+photo4.src = "assets/contact.jpg";
+photo5.src = "assets/future.jpg";
+photo6.src = "assets/home.jpg";
+photo9.src = "assets/home3.jpg";
+photo10.src = "assets/madonnaObserver.jpg";
+photo11.src = "assets/meBg.jpg";
+photo12.src = "assets/merelObserver.jpg";

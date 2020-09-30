@@ -1,27 +1,37 @@
 <div class="wrapper">
-    <mat-icon id="projectsArrow" [routerLink]="['/home']">keyboard_arrow_left</mat-icon>
+    <a class="back"><mat-icon id="projectsArrow" [routerLink]="['/home']">keyboard_arrow_left</mat-icon></a>
     <h1 class="title" id="projectsTitle">{{projects}}</h1>
     <h2 id="present">{{present}}</h2>
-    <h3 (mouseenter)="changeImg('merelP')" id="merel">{{merel}}</h3>
-    <p id="merelP" (mouseenter)="changeImg('merelP')">{{merelP}}</p>
-    <a id="merelLink" (mouseenter)="changeImg('merelP')" target="_blank" href="https://github.com/AdamVromman/PortfolioMerel">Github</a>
-    <div class="br"></div>
-    <h3 (mouseenter)="changeImg('madonnaP')" id="madonna">{{madonna}}</h3>
-    <p id="madonnaP" (mouseenter)="changeImg('madonnaP')">{{madonnaP}}</p>
-    <a id="madonnaLink" (mouseenter)="changeImg('madonnaP')" target="_blank"href="#">Website</a>
-    <div class="br"></div>
-    <h2 id="past">{{past}}</h2>
-    <h3 id="bikeapp" (mouseenter)="changeImg('bikeappP')">{{bikeapp}}</h3>
-    <p id="bikeappP" (mouseenter)="changeImg('bikeappP')">{{bikeappP}}</p>
-    <a id="bikeappLink" (mouseenter)="changeImg('bikeappP')" target="_blank"href="https://github.com/AdamVromman/bikeAppFrontend">Frontend</a>
-    <a id="bikeappLink2" (mouseenter)="changeImg('bikeappP')" target="_blank"href="https://github.com/AdamVromman/BikeAppBackend">Backend</a>
-    <div class="br"></div>
-    <h3 id="aottg2" (mouseenter)="changeImg('aottg2P')">AOTTG 2</h3>
-    <p id="aottg2P" (mouseenter)="changeImg('aottg2P')">{{aottg2P}}</p>
-    <a id="aottg2Link" (mouseenter)="changeImg('aottg2P')" target="_blank" href="https://www.patreon.com/aottg2">Patreon</a>
-    <a id="aottg2Link2" (mouseenter)="changeImg('aottg2P')" target="_blank" href="https://github.com/AoTTG-2">Github</a>
-    <div class="br"></div>
-    <h3 id="bikes" (mouseenter)="changeImg('bikesP')">{{bikes}}</h3>
-    <p id="bikesP" (mouseenter)="changeImg('bikesP')">{{bikesP}}</p>
-    <div class="br"></div>
+    <div id="merelObserver">
+        <h3 id="merel">{{merel}}</h3>
+        <p id="merelP">{{merelP}}</p>
+        <a class="button" id="merelLink" target="_blank" href="https://github.com/AdamVromman/PortfolioMerel">Github</a>
+        <div class="br"></div>
+    </div>
+    <div id="madonnaObserver">
+        <h3 id="madonna">{{madonna}}</h3>
+        <p id="madonnaP">{{madonnaP}}</p>
+        <a class="disabled button" id="madonnaLink" target="_blank">Website</a>
+        <div class="br"></div>
+    </div>
+    <div id="aottg2Observer">
+        <h3 id="aottg2">AOTTG 2</h3>
+        <p id="aottg2P">{{aottg2P}}</p>
+        <a id="aottg2Link" class="button" target="_blank" href="https://www.patreon.com/aottg2">Patreon</a>
+        <a id="aottg2Link2" class="button" target="_blank" href="https://github.com/AoTTG-2">Github</a>
+        <div class="br"></div>
+    </div>
+    <div id="bikeappObserver">
+        <h2 id="past">{{past}}</h2>
+        <h3 id="bikeapp">{{bikeapp}}</h3>
+        <p id="bikeappP">{{bikeappP}}</p>
+        <a id="bikeappLink" class="button" target="_blank"href="https://github.com/AdamVromman/bikeAppFrontend">Frontend</a>
+        <a id="bikeappLink2" class="button" target="_blank"href="https://github.com/AdamVromman/BikeAppBackend">Backend</a>
+        <div class="br"></div>
+    </div>
+    <div id="bikesObserver">
+        <h3 id="bikes">{{bikes}}</h3>
+        <p id="bikesP">{{bikesP}}</p>
+        <div class="br"></div>
+    </div>
 </div>

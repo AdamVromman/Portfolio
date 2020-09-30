@@ -22,9 +22,11 @@ export class ProjectsComponent implements OnInit {
   aottg2: string;
   aottg2P: string;
 
+  observer;
+
   constructor(private _colorService: ColorService) {
 
-    _colorService.setImage('/assets/projects.jpg');
+    _colorService.setImage('/assets/merelP.jpg');
    }
 
   ngOnInit(): void {
@@ -46,31 +48,67 @@ export class ProjectsComponent implements OnInit {
         this.aottg2P = t['aottg2P'];
       });
       
-
-      var observer = new  IntersectionObserver((entries) => 
-      { 
-        if(entries[0].intersectionRatio > 0.5)
-        {
-          this._colorService.setImage(`/assets/${entries[0].target.id}.jpg`);
-        }
-      }, {threshold: 0.5});
-      observer.observe(document.getElementById('madonnaP'));
-      observer.observe(document.getElementById('bikesP'));
-      observer.observe(document.getElementById('bikeappP'));
-      observer.observe(document.getElementById('aottg2P'));
-      observer.observe(document.getElementById('merelP'));
       
-
+      if (window.innerWidth >= 768)
+      {
+        this.observer = new  IntersectionObserver((entries) => 
+        { 
+          if(entries[0].intersectionRatio >= 1)
+          {
+            this._colorService.setImage(`/assets/${entries[0].target.id}.jpg`);
+          }
+        }, {threshold: 1});
+      }
+      else
+      {
+        this.observer = new  IntersectionObserver((entries) => 
+        { 
+          if(entries[0].intersectionRatio >= 0.5)
+          {
+            this._colorService.setImage(`/assets/${entries[0].target.id}.jpg`);
+          }
+        }, {threshold: 0.5});
+      }
     
+        this.observer.observe(document.getElementById('madonnaObserver'));
+        this.observer.observe(document.getElementById('bikesObserver'));
+        this.observer.observe(document.getElementById('bikeappObserver'));
+        this.observer.observe(document.getElementById('aottg2Observer'));
+        this.observer.observe(document.getElementById('merelObserver'));  
 
-
-
-  }
-
-
-  public changeImg(name: string)
-  {
-    this._colorService.setImage(`/assets/${name}.jpg`);
+      onresize = () =>
+      {
+        if (window.innerWidth >= 768)
+        {
+        this.observer = new  IntersectionObserver((entries) => 
+        { 
+          if(entries[0].intersectionRatio >= 1)
+          {
+            this._colorService.setImage(`/assets/${entries[0].target.id}.jpg`);
+          }
+        }, {threshold: 1});
+        this.observer.observe(document.getElementById('madonnaObserver'));
+        this.observer.observe(document.getElementById('bikesObserver'));
+        this.observer.observe(document.getElementById('bikeappObserver'));
+        this.observer.observe(document.getElementById('aottg2Observer'));
+        this.observer.observe(document.getElementById('merelObserver'));  
+      }
+      else
+      {
+        this.observer = new  IntersectionObserver((entries) => 
+        { 
+          if(entries[0].intersectionRatio >= 0.5)
+          {
+            this._colorService.setImage(`/assets/${entries[0].target.id}.jpg`);
+          }
+        }, {threshold: 0.5});
+        this.observer.observe(document.getElementById('madonnaObserver'));
+        this.observer.observe(document.getElementById('bikesObserver'));
+        this.observer.observe(document.getElementById('bikeappObserver'));
+        this.observer.observe(document.getElementById('aottg2Observer'));
+        this.observer.observe(document.getElementById('merelObserver'));  
+      }
+      }
   }
 
 }

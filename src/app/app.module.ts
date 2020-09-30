@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { LanguageComponent } from './language/language.component';
 import { MaterialModule } from './material/material.module';
+import { PhotoComponent } from './photo/photo.component';
 
 
 
@@ -23,6 +24,7 @@ import { MaterialModule } from './material/material.module';
     ProjectsComponent,
     ContactComponent,
     LanguageComponent,
+    PhotoComponent,
     
   ],
   imports: [

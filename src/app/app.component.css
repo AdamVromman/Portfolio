@@ -1,20 +1,16 @@
-#foto
+app-photo
 {
     width: 45%;
     min-height: 100vh;
     max-height: 100vh;
     margin-left: -2%;
-    z-index: 4;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-    transition: opacity 1s ease-in;
-    
 }
+
 
 #text
 {
+    position: relative;
     width: 60%;
     background-color: white;
     background-clip: padding-box;
@@ -42,18 +38,27 @@
     max-height: 110vh;
 }
 
-#img
+#img2
 {
-    
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
- 
-  
-  
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+    top: 0
+    /*  */
 }
+
 @media screen and (max-width: 768px)
 {
+    app-photo
+    {
+        margin-left: 0;
+        margin-bottom: -2%;
+        min-height: 50vh;
+        max-height: 50vh;
+        min-width: 100vw;
+    }
 
     #text
     {
@@ -63,23 +68,6 @@
         border-top: 40px transparent solid;
         min-height: 0;
     }   
-    #foto
-    {
-        min-height: 50vh;
-        max-height: 50vh;
-        min-width: 100vw;
-        margin-left: 0;
-        margin-bottom: -2%;
-       
-        
-    }
-
-    #img
-    {
-        min-height: 50vh;
-        min-width: 100vw;
-    }
-
     #wrapper
     {
         flex-direction: column-reverse;

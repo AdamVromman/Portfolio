@@ -40,13 +40,8 @@ export class HomeComponent implements OnInit {
       }
     )
 
-    this._colorService.setImage('/assets/home.jpg');
-    //this._colorService.addEventListener("me");
-    //this._colorService.addEventListener("future");
-    //this._colorService.addEventListener("projects");
-    //this._colorService.addEventListener("contact");
+    this._colorService.setImage('/assets/home3.jpg');
     
-
   }
 
   
