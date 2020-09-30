@@ -1,4 +1,4 @@
 <div id="foto">
-    <img id="img" #img  [src]="this.url1">
-    <img id="img2" #img2 [src]="this.url2">
+    <img [@photoAnimationRechts]="photo1? 'onScreenRechts':'offScreenRechts'" id="img" #img  [src]="this.url1">
+    <img [@photoAnimationLinks]="photo1? 'offScreenLinks':'onScreenLinks'" id="img2" #img2 [src]="this.url2">
 </div>

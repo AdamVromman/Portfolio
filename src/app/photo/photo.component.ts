@@ -5,10 +5,10 @@ import {photoLinks, photoRechts} from '../route-animation';
   selector: 'app-photo',
   templateUrl: './photo.component.html',
   styleUrls: ['./photo.component.css'],
-  // animations: [
-  //  photoRechts,
-  //  photoLinks
-  //   ]
+  animations: [
+   photoRechts,
+   photoLinks
+    ]
 })
 export class PhotoComponent implements OnInit {
 

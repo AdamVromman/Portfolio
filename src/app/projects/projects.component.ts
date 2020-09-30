@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(private _colorService: ColorService) {
 
-    _colorService.setImage('/assets/merelP.jpg');
+    _colorService.setImage('/assets/projects.jpg');
    }
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 <div id="wrapper">
-  <div id="text">
-    <router-outlet></router-outlet>
+  <div [@routerAnimations]="prepareRoute(outlet)" id="text">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
   <app-photo></app-photo>
   <app-language></app-language>
